@@ -1,0 +1,144 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbfu0a8kdfvxd"]
+
+[ext_resource type="Script" path="res://dw_radial_menu.gd" id="1_i0kgv"]
+[ext_resource type="Script" path="res://SimpleRadialMenuExample.gd" id="1_ru24t"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ru24t")
+
+[node name="RadialMenu" type="Control" parent="."]
+custom_minimum_size = Vector2(400, 400)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -200.0
+offset_right = 200.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i0kgv")
+option_count = 8
+press_only_inside = true
+thickness = 80.0
+bg_color = Color(0.172833, 0.172833, 0.172833, 1)
+cursor_color = Color(0.450648, 0.450648, 0.450648, 1)
+starting_point_angle = null
+polygon_pt_count = 100
+
+[node name="Label" type="Label" parent="RadialMenu"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 150.0
+offset_top = -10.0
+offset_right = 250.0
+offset_bottom = 90.0
+text = "Option 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label8" type="Label" parent="RadialMenu"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 263.137
+offset_top = 36.8629
+offset_right = 363.137
+offset_bottom = 136.863
+text = "Option 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="RadialMenu"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 310.0
+offset_top = 150.0
+offset_right = 410.0
+offset_bottom = 250.0
+text = "Option 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label3" type="Label" parent="RadialMenu"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 263.137
+offset_top = 263.137
+offset_right = 363.137
+offset_bottom = 363.137
+text = "Option 3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label4" type="Label" parent="RadialMenu"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 150.0
+offset_top = 310.0
+offset_right = 250.0
+offset_bottom = 410.0
+text = "Option 4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label5" type="Label" parent="RadialMenu"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 36.8629
+offset_top = 263.137
+offset_right = 136.863
+offset_bottom = 363.137
+text = "Option 5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="RadialMenu"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = -10.0
+offset_top = 150.0
+offset_right = 90.0
+offset_bottom = 250.0
+text = "Option 6"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label7" type="Label" parent="RadialMenu"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_left = 36.8629
+offset_top = 36.8629
+offset_right = 136.863
+offset_bottom = 136.863
+text = "Option 7"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OutputLabel" type="Label" parent="."]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = -11.5
+offset_right = 62.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Pressed option: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="RadialMenu" to="." method="_on_radial_menu_pressed"]
