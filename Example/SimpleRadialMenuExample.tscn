@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dbfu0a8kdfvxd"]
 
-[ext_resource type="Script" path="res://dw_radial_menu.gd" id="1_i0kgv"]
-[ext_resource type="Script" path="res://SimpleRadialMenuExample.gd" id="1_ru24t"]
+[ext_resource type="Script" path="res://addons/SimpleRadialMenu/dw_radial_menu.gd" id="1_i0kgv"]
+[ext_resource type="Script" path="res://Example/SimpleRadialMenuExample.gd" id="1_ru24t"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
