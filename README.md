@@ -8,3 +8,5 @@ How to use:
 4. Add the icons as children of RadiaMenu node
 5. Connect the pressed signal to an observer
 6. Implement logic in observer to do stuff
+
+![](screenshot.png)
