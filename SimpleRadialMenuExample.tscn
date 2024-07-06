@@ -32,7 +32,6 @@ press_only_inside = true
 thickness = 80.0
 bg_color = Color(0.172833, 0.172833, 0.172833, 1)
 cursor_color = Color(0.450648, 0.450648, 0.450648, 1)
-starting_point_angle = null
 polygon_pt_count = 100
 
 [node name="Label" type="Label" parent="RadialMenu"]
